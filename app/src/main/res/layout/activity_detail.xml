@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detail">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_tozihat"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:adjustViewBounds="true"
+                    android:background="@color/colorPrimaryLight"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_arrow"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/img_back_tozihat"
+                    android:layout_margin="16dp"/>
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_like_2"
+                    android:id="@+id/img_like"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/img_tozihat"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="نام درس"
+                    android:layout_below="@id/img_tozihat"
+                    android:layout_alignParentRight="true"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_margin="8dp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:id="@+id/title_book_detail"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="رشته دانشگاهی"
+                    android:layout_below="@id/title_book_detail"
+                    android:layout_alignParentRight="true"
+                    android:textStyle="bold"
+                    android:layout_margin="8dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/reshte_detail"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="سال انتشار"
+                    android:layout_below="@id/reshte_detail"
+                    android:layout_alignParentRight="true"
+                    android:textSize="16dp"
+                    android:layout_margin="8dp"
+                    android:lineSpacingExtra="10dp"
+                    android:textColor="@color/colorSecondaryText"
+                    android:id="@+id/date_upload_detail"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ثیمت"
+                    android:layout_below="@id/date_upload_detail"
+                    android:layout_alignParentRight="true"
+                    android:textSize="16dp"
+                    android:layout_margin="8dp"
+                    android:lineSpacingExtra="10dp"
+                    android:textColor="@color/colorSecondaryText"
+                    android:id="@+id/price_detail"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
